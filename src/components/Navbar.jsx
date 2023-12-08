@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand text-danger fw-bold" href="#">
+          <a className="navbar-brand text-danger fw-bold" to="#">
             Frontend
           </a>
           <button
@@ -26,43 +26,43 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="#">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="#">
                   Products
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Categories
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       Fashion
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       Electronic
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       Others
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -81,17 +81,17 @@ const Navbar = () => {
                     </button>
                     <ul class="dropdown-menu">
                       <li>
-                        <Link class="dropdown-item" href="#">
+                        <Link class="dropdown-item" to="/profile">
                           Profile
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" href="#">
+                        <Link class="dropdown-item" to="/changepp">
                           Change password
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" href="#">
+                        <Link class="dropdown-item" to="/logout">
                           Logout
                         </Link>
                       </li>
